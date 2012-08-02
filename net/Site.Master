@@ -1,0 +1,56 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="net.SiteMaster" %>
+<%@ Register TagPrefix="gelia" TagName="Tabs" Src="TabControl/Tabs.ascx" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" runat="server" id="htm">
+<head runat="server">
+    <title><asp:ContentPlaceHolder ID="titleContent" runat="server">
+    </asp:ContentPlaceHolder></title>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/js.js"></script>
+</head>
+<body>
+    <form runat="server">
+    <div class="page">
+        <div class="header">
+        	<div style="width: 100%;">
+	            <div class="title" style="width: 70%;">
+	                <h1>
+	                    Language Localization Sample Application
+	                </h1>
+	            </div>
+	            <div style="float:right; width: 28%; margin-right: 10px;">
+	            	<div style="float: right; margin-top: 5px;" title="العربية">
+	            		<asp:ImageButton runat="server" ImageUrl="~/img/Egypt-Flag-icon.png" Width="40px" id="egyCulture" OnClick="egyCulture_Click"></asp:ImageButton>
+	            	</div>
+	            	<div style="float: right; margin-top: 5px; margin-right: 5px;" title="Pусский">
+	            		<asp:ImageButton runat="server" ImageUrl="~/img/Russia-Flag-icon.png" Width="40px" id="rusCulture" OnClick="rusCulture_Click"></asp:ImageButton>
+	            	</div>
+	            	<div style="float: right; margin-top: 5px; margin-right: 5px;" title="Deutsch">
+	            		<asp:ImageButton runat="server" ImageUrl="~/img/Germany-Flag-icon.png" Width="40px" id="gerCulture" OnClick="gerCulture_Click"></asp:ImageButton>
+	            	</div>
+	            	<div style="float: right; margin-top: 5px; margin-right: 5px;" title="Español">
+	            		<asp:ImageButton runat="server" ImageUrl="~/img/Mexico-Flag-icon.png" Width="40px" id="spanCulture" OnClick="spanCulture_Click"></asp:ImageButton>
+	            	</div>
+	            	<div style="float: right; margin-top: 5px; margin-right: 5px;" title="English">
+	            		<asp:ImageButton runat="server" ImageUrl="~/img/United-States-Flag-icon.png" Width="40px" id="engCulture" OnClick="engCulture_Click"></asp:ImageButton>
+	            	</div>
+	            </div>
+            </div>
+            <div class="clear hideSkiplink">
+                <gelia:Tabs runat="server" ></gelia:Tabs>
+            </div>
+        </div>
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+    <div class="footer">
+        
+    </div>
+    </form>
+</body>
+</html>
