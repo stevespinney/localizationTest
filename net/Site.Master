@@ -2,7 +2,7 @@
 <%@ Register TagPrefix="gelia" TagName="Tabs" Src="TabControl/Tabs.ascx" %>
 
 <!DOCTYPE html>
-<html runat="server" id="htm">
+<html runat="server" id="htm" manifest="cache.manifest">
 <head runat="server">
     <title><asp:ContentPlaceHolder ID="titleContent" runat="server">
     </asp:ContentPlaceHolder></title>
