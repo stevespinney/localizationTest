@@ -7,5 +7,5 @@
     <h2>
         <asp:Literal runat="server" ID="greeting" meta:resourcekey="greeting"></asp:Literal>
     </h2>
-    <asp:HiddenField runat="server" ID="cultureVal" ClientIDMode="Static" />
+    <asp:HiddenField runat="server" ID="cultureVal" />
 </asp:Content>
