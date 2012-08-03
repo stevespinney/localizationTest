@@ -12,6 +12,6 @@
         <asp:Literal runat="server" ID="footer1_1" meta:resourcekey="footer1_1"></asp:Literal> <a href="http://www.asp.net" title="ASP.NET Website">www.asp.net</a> 
         <asp:Literal runat="server" ID="f2" meta:resourcekey="f2"></asp:Literal>.
     </p>
-    <asp:HiddenField runat="server" ID="cultureVal" />
+    <asp:HiddenField runat="server" ID="cultureVal" ClientIDMode="Predictable" />
 
 </asp:Content>

@@ -5,5 +5,5 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <h2><asp:Literal runat="server" ID="cugreet" meta:resourcekey="cugreet"></asp:Literal></h2>
-    <asp:HiddenField runat="server" ID="cultureVal" />
+    <asp:HiddenField runat="server" ID="cultureVal" ClientIDMode="Predictable" />
 </asp:Content>
